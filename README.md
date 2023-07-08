@@ -37,10 +37,10 @@ This is the simplest case. Get the script in whatever way you prefer and include
 
 ```html
 <script src="//path/to/video.min.js"></script>
-<script src="//path/to/videojs-vtt-thumbnails.min.js"></script>
+<script src="//path/to/nuevo-vtt-thumbnails.min.js"></script>
 <script>
   var player = videojs('my-video');
-  player.vttThumbnails({
+  player.thumbnails({
     src: 'example/thumbs.vtt'
   });
 </script>
@@ -56,11 +56,11 @@ var videojs = require('video.js');
 // The actual plugin function is exported by this module, but it is also
 // attached to the `Player.prototype`; so, there is no need to assign it
 // to a variable.
-require('videojs-vtt-thumbnails');
+require('nuevo-vtt-thumbnails');
 
 var player = videojs('my-video');
 
-player.vttThumbnails();
+player.thumbnails();
 ```
 
 ### RequireJS/AMD
@@ -68,10 +68,10 @@ player.vttThumbnails();
 When using with RequireJS (or another AMD library), get the script in whatever way you prefer and `require` the plugin as you normally would:
 
 ```js
-require(['video.js', 'videojs-vtt-thumbnails'], function(videojs) {
+require(['video.js', 'vnuevo-vtt-thumbnails'], function(videojs) {
   var player = videojs('my-video');
 
-  player.vttThumbnails();
+  player.thumbnails();
 });
 ```
 
@@ -85,16 +85,16 @@ Options are passed in the same object as the source location.
   var player = videojs('my-video');
   player.vttThumbnails({
     src: 'example/thumbs.vtt',
-    showTimestamp: true
+    responsive: true
   });
 ```
 ### Available Options
 
-- `showTimestamp` (Boolean, Default: false) - Disables the timestamp that is shown on hover.
+- `responsive` (Boolean, Default: false) - enable (true) to display responsive thumb.
 
 ## License
 
-MIT. Copyright (c) Chris Boustead &lt;chris@forgemotion.com&gt;
+MIT. Copyright (c) Nuevodevel &lt;team.nuevodevel@gmail.com&gt;
 
 
 [videojs]: http://videojs.com/
