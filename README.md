@@ -1,6 +1,6 @@
 # videojs-vtt-thumbnails
 
-Video.js plugin that displays thumbnails on progress bar hover, driven by external VTT files.  Based on [this JW Player spec](https://support.jwplayer.com/customer/portal/articles/1407439-adding-preview-thumbnails). Note, this plugin currently only supports sprited thumbnails.
+Video.js plugin that displays thumbnails on progress bar hover, driven by external VTT files.  Based on [this JW Player spec](https://support.jwplayer.com/customer/portal/articles/1407439-adding-preview-thumbnails).
 
 Note: Plugin hides the default skin's mouse display timestamp on hover.
 
@@ -24,7 +24,7 @@ Note: Plugin hides the default skin's mouse display timestamp on hover.
 ## Installation
 
 ```sh
-npm install --save videojs-vtt-thumbnails
+npm install --save nuevo-vtt-thumbnails
 ```
 
 ## Usage
