@@ -1,4 +1,4 @@
-# videojs-vtt-thumbnails
+# nuevo-vtt-thumbnails
 
 Video.js plugin that displays thumbnails on progress bar hover, driven by external VTT files.  Based on [this JW Player spec](https://support.jwplayer.com/customer/portal/articles/1407439-adding-preview-thumbnails).
 
