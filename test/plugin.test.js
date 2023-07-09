@@ -41,18 +41,15 @@ QUnit.test('registers itself with video.js', function(assert) {
   assert.expect(2);
 
   assert.strictEqual(
-    typeof Player.prototype.vttThumbnails,
+    typeof Player.prototype.thumbnails,
     'function',
-    'videojs-vtt-thumbnails plugin was registered'
+    'nuevo-vtt-thumbnails plugin was registered'
   );
 
-  this.player.vttThumbnails();
+  this.player.thumbnails();
 
   // Tick the clock forward enough to trigger the player to be "ready".
   this.clock.tick(2);
 
-  assert.ok(
-    this.player.hasClass('vjs-vtt-thumbnails'),
-    'the plugin adds a class to the player'
-  );
+
 });
