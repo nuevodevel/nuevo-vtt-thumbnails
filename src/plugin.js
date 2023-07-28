@@ -562,7 +562,13 @@ function getData(url) {
 
 const thumbnails = function(options) {
   this.ready(() => {
-    onPlayerReady(this, videojs.obj.merge(defaults, options));
+	let opts=[];
+	try{
+		opts = videojs.obj.merge(defaults, options);
+    } catch(e) {
+		opts = videojs.mergeOptions(defaults, options);
+	}
+	onPlayerReady(this, opts);
   });
 };
 const registerPlugin = videojs.registerPlugin || videojs.plugin;
