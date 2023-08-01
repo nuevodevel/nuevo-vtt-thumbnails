@@ -71,7 +71,9 @@ When using with RequireJS (or another AMD library), get the script in whatever w
 require(['video.js', 'vnuevo-vtt-thumbnails'], function(videojs) {
   var player = videojs('my-video');
 
-  player.thumbnails();
+  player.thumbnails({
+      src: 'example/thumbs.vtt'
+  });
 });
 ```
 
