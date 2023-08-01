@@ -60,7 +60,9 @@ require('nuevo-vtt-thumbnails');
 
 var player = videojs('my-video');
 
-player.thumbnails();
+player.thumbnails({
+  src: 'example/thumbs.vtt',
+});
 ```
 
 ### RequireJS/AMD
